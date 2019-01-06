@@ -28,9 +28,9 @@
         padding: 14px 16px;
         text-decoration: none;
     }
-    a:hover
+     a:hover
     {
-        background-color: #111;
+        background-color: #333;
     }
     .active
     {
@@ -92,6 +92,16 @@
         border-color: #333333;
         margin-top: 10px;
     }
+    #wiadomosc
+    {
+        width:300px; height:150px;
+    }
+    .submit
+    {
+        width: 120px;
+        height: 40px;
+        color: #9b4caf;
+    }
     </style>
 </head>
 <body>
@@ -107,18 +117,34 @@
         <h1>About us</h1>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem quae beatae debitis, cupiditate eligendi dolor officiis reprehenderit nisi distinctio adipisci magnam eius nesciunt quos earum repellat. Ipsam id fugiat quis.</p>
     </section>
-    <section>
+    <section id="skills">
         <h1>Skills</h1>
         <div id="div1"></div>
         <div id="div2"></div>
         <div id="div3"></div>
         <div id="div4"></div>
     </section>
-    <secion>
+    <secion id="portfolio">
         <h1>Portfolio</h1>
         <div id="ramka1"></div>
         <div id="ramka2"></div>
         <div id="ramka3"></div>
     </secion>
+    <section id="contact">
+        <h1>Mariusz Betkier</h1>
+        <address>
+            E-mail: <a href="mailto:przykladowy@em.pl"  >przykladowy@em.pl</a> 
+            Phone number: 555-666-888 <br>
+        </address>
+        <form action="">
+            Imie: <br>
+            <input type="text" name="Imie" id="imie" required> <br>
+            Temat: <br>
+            <input type="text" name="Temat" id="tekst" required> <br>
+            Wiadomość: <br>
+            <input type="text" name="Wiadomość" id="wiadomosc" required > <br><br>
+            <input type="submit" value="Wyślij"class="submit">
+        </form>
+    </section>
 </body>
 </html>
